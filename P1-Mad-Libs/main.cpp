@@ -44,6 +44,6 @@ int main()
                     << place << " on " << day << ".\n" "Please make sure to show up at " << time << 
                     ", or else you will be required to " 
                     << verb << " a/an " << animal << " with your " << body_part << ".\nRSVP at " << info <<  ".\n";
-
-
+    
+    return 0;
 }
