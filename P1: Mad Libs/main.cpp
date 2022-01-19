@@ -40,7 +40,7 @@ int main()
     std::cin >> info;
 
     std::cout <<"\n"  << name << " is having a " << theme << " party!\nIt's going to be at " 
-                    << place << " on " << day << ".\n" "Please make sure to show up at " << time << 
+                    << place << " on " << day << ".\n" "Please make sure to show up at " << time <<
                     ", or else you will be required to " 
                     << verb << " a/an " << animal << " with your " << body_part << ".\nRSVP at " << info <<  ".\n";
     
