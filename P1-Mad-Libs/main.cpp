@@ -1,7 +1,6 @@
 #include<iostream>
 #include<string>
 
-
 int main()
 {
     std::cout << "Give me a name: ";
