@@ -16,7 +16,6 @@ int main(){
 
     url_braker(url);
 
-
 }
 
 void url_braker(string url){
