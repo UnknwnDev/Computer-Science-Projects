@@ -12,7 +12,7 @@ int main(){
 
     cout << "Enter URL here: ";
     cin >> url; 
-    cout << "\n";
+    cout << "\n"; 
 
     url_braker(url);
 
