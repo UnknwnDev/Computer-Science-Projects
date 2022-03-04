@@ -27,7 +27,8 @@ class Circle {
         double area() const;
 };
 
-void printArea(const Shape& shape) {
+template <typename T>
+void printArea(const T& shape) {
     std::cout << shape.area() << "\n";
 } 
 
