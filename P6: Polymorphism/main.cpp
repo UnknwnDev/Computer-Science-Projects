@@ -1,7 +1,9 @@
 #include<iostream>
+#include<math.h>
 
 class Shape{
-
+    public:
+       virtual double area() const = 0;
 };
 
 class Rectangle : public Shape{
@@ -10,37 +12,60 @@ class Rectangle : public Shape{
         double _height;
     public:
         Rectangle(double width, double height);
+        double area() const;
 };
 
 class Square : public Shape{
+    private:
+        double _side;
     public:
-        Square(double size);  
+        Square(double side); 
+        double area() const;
 };
 
 class Circle : public Shape{
+    private:
+        double _radius;
     public:
-        Circle(double radius);  
+        Circle(double radius); 
+        double area() const;
 };
+
+void printArea(const Shape& shape) {
+    std::cout << shape.area() << "\n";
+} 
 
 int main(){
     Rectangle r1{ 3.0, 5.0 }; 
     Square s1{ 4.0 }; 
     Circle c1{ 10.0 }; 
 
-    // printArea(r1); 
-    // printArea(s1); 
-    // printArea(c1); 
-    return 0;
+    printArea(r1); 
+    printArea(s1); 
+    printArea(c1); 
 }
 
 Rectangle::Rectangle(double width, double height){
-    
+    _width = width;
+    _height = height;
 }
 
-Square::Square(double size){
+double Rectangle::area() const{
+    return _width * _height;
+}
 
+Square::Square(double side){
+    _side = side;
+}
+
+double Square::area() const{
+    return _side * _side;
 }
 
 Circle::Circle(double radius){
+    _radius = radius;
+}
 
+double Circle::area() const{
+    return (_radius * _radius) * M_PI;
 }
