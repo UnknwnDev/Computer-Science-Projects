@@ -4,7 +4,7 @@ class Shape{
 
 };
 
-class Rectangle{
+class Rectangle : public Shape{
     private:
         double _width;
         double _height;
@@ -12,12 +12,12 @@ class Rectangle{
         Rectangle(double width, double height);
 };
 
-class Square{
+class Square : public Shape{
     public:
         Square(double size);  
 };
 
-class Circle{
+class Circle : public Shape{
     public:
         Circle(double radius);  
 };
