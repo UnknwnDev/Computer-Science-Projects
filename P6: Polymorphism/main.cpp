@@ -1,12 +1,8 @@
 #include<iostream>
 #include<math.h>
 
-class Shape{
-    public:
-       virtual double area() const = 0;
-};
 
-class Rectangle : public Shape{
+class Rectangle {
     private:
         double _width;
         double _height;
@@ -15,7 +11,7 @@ class Rectangle : public Shape{
         double area() const;
 };
 
-class Square : public Shape{
+class Square {
     private:
         double _side;
     public:
@@ -23,7 +19,7 @@ class Square : public Shape{
         double area() const;
 };
 
-class Circle : public Shape{
+class Circle {
     private:
         double _radius;
     public:
